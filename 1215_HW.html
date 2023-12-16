@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 10;
+            padding: 10;
+            display: block;
+            align-items: flex-start;
+            height: 100vh;
+            font-size: medium;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(55, 79, 66);
+            color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        var rand = Math.floor((Math.random()*10)+1);
+        var num = window.prompt("Enter a number between 1 to 10: ");
+
+        while(num != rand) {
+            num = window.prompt("Keep guessing: ")
+        }
+
+        document.writeln("Congratulations! The answer is " + rand);
+    </script>
+</body>
+</html>
